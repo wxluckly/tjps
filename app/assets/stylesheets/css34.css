@@ -1,0 +1,43 @@
+﻿body,div,ul,li{margin: 0;padding: 0}
+li{list-style: none;}
+html{height: 100%;}
+
+@font-face {
+	font-family:"STLITI";
+	src: url("STLITI.eot");
+	src: local("STLITI Regular"), local("STLITI"), url("STLITI.ttf") format("truetype"), url("STLITI.svg#STLITI") format("svg");
+}
+
+body{background:url(bg340.jpg) no-repeat center bottom;background-size:cover;width: 100%;  background-attachment: fixed;
+filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
+-moz-background-size:100% 100%;
+background-size:100% 100%;
+background-repeat: no-repeat;
+}
+/*头部定义*/
+header{width: 100%;height: 45px;line-height: 45px;background: #121617;position: fixed;top: 0;left: 0;z-index: 999;}
+header .back{position: absolute;left: 20px;}
+header .title{position: relative;width:100%;text-align: center;color: #cbcbcb;margin:0px;}
+header .home{position:absolute;right: 20px;}
+
+.picNav{width: 100%; margin:0px auto; position:fixed; bottom:0px;}
+.picNav li{}
+.picNav li.on{}
+.picNav li a{font-family:STLITI;; text-decoration:none;width:23%;  margin-left:2%; line-height: 60px;  text-align: center; float: left;background-size:auto 100%; background:url(one_btn2.png) no-repeat center; background-size: contain; color: #fff; font-weight: bolder;}
+.picNav li a.on{background: url(one_btn1.png) no-repeat center; background-size: contain;}
+
+.container{width:100%; margin:55px auto 50px auto;  position:relative; }
+.container5{width: 100%; margin:55px auto 0 auto; position:relative;}
+
+.container .art{width: 90%; margin: 0px auto; background:rgba(255,255,255,0.7);  padding:0 8px;overflow-y:auto; }
+.container .art span{width: 88%; color:#f31b10;}
+.container .art p{  font-size:16px; line-height:22px;}
+
+
+.top_right,.top_left,.bottom_left,.bottom_right{position: absolute;width: 42px;height: 42px;}
+.top_right{background: url(2.png) no-repeat center; top: -4px; right: -4px}
+.top_left{background: url(1.png) no-repeat center; top:  -4px; left: -4px}
+.bottom_right{background: url(4.png) no-repeat center; bottom: -4px; right: -4px}
+.bottom_left{background: url(3.png) no-repeat center; bottom:  -4px; left: -4px}
+.container p{width: 100%;color:#ab8821;line-height: 26px;font-family: 1.5em;}
+.container p img{width:80%;margin: 5px auto;display: block;}

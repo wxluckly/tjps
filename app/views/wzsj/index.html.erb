@@ -1,0 +1,42 @@
+&nbsp;
+<header>
+  <h4 class="title">
+    <span class="back" onClick="history.back();">上一页</span>
+    无终胜境
+    <span class="home"  onclick="turnHome()">首页</span>
+  </h4>
+</header>
+<div class="container6" id="contain">
+  <div class="bj"><a href="3_1.html">牌&nbsp楼</a></div>
+  <div class="bj"><a href="3_2.html">新&nbsp山&nbsp门</a></div>
+  <div class="bj"><a href="3_3.html">三&nbsp盘&nbsp暮&nbsp雨</a></div>
+  <div class="bj"><a href="3_4.html">入&nbsp胜</a></div>
+  <div class="bj"><a href="3_5.html">漱&nbsp峡</a></div>
+  <div class="bj"><a href="3_6.html">飞&nbsp帛&nbsp涧</a></div>
+  <div class="bj"><a href="3_7.html">云&nbsp楼&nbsp梨&nbsp影</a></div>
+  <div class="bj"><a href="3_8.html">挂&nbsp月&nbsp峰</a></div>
+</div>
+
+<ul class="picNav" >
+  <li><a href="/ggms/index">缘起</a></li>
+  <li><a class="on" href="/wzsj/index">胜境</a></li>
+  <li><a href="/wtxj/index">问途</a></li>
+  <li><a href="/wydy/index">登游</a></li>
+</ul>
+<script >
+  function findDimensions() {
+
+    var tabcont=document.getElementById("contain");
+
+    cheight=document.documentElement.clientHeight;
+
+    tabcont.style.height=cheight-160 + 'px';
+    tabcont.style.minHeight=cheight-160 + 'px';
+
+  }
+  window.onload= function(){findDimensions();}
+  window.onresize= function(){findDimensions();}
+  function  turnHome(){
+    window.location.href="/"
+  }
+</script>

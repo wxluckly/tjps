@@ -4,6 +4,7 @@ gem 'rails'
 
 # 数据库
 gem 'mysql2'
+gem 'sqlite3'
 
 # 资源
 gem 'uglifier', '>= 1.3.0'

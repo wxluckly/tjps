@@ -1,0 +1,45 @@
+<header>
+  <h4 class="title"><span class="back" onClick="history.back();">上一页</span>亘古名山<span class="home"  onclick="turnHome()">首页</span></h4>
+</header>
+<div class="container" id="contain">
+  <div class="art" id="contain1">
+    <p style="padding-top:10px;">盘山是国家5A级风景名胜区，是自然山水与名胜古迹并著、佛教寺院与皇家园林共称的旅游胜地。
+      <%= image_tag '1.jpg' %>
+      盘山位于天津市蓟县境内，西距北京60公里，东距唐山120公里，南距天津110公里，津蓟高速、京平高速可直达景区停车场，京沈高速、102国道直通景区。
+      <%= image_tag '2.jpg' %>
+      盘山始记于汉，兴于唐，极盛于清。历史上建有72座寺庙和13座玲珑宝塔，一座皇家园林──静寄山庄，早在唐代就以“东五台山”著称佛界，清康熙年间以“京东第一山”驰名中外，民国初年同泰山、西湖、故宫等并列为中国十五大名胜之一。
+      <%= image_tag '3.jpg' %>
+      盘山为历代帝王将相文人墨客竞游之地，魏武帝、唐太宗、辽太宗、金世宗、康熙、乾隆、嘉庆、道光等，都曾巡游盘山，并留下了大量的诗文、石刻、碑记。乾隆皇帝一生32次登临盘山，留下盛赞盘山的诗作1702首，第一次巡幸盘山时，就发出了“早知有盘山，何必下江南”的感叹。
+      <%= image_tag '4.jpg' %>
+      盘山素有“泰山之雄、华山之险、峨嵋之秀、雁荡之幽”的美誉。大自然的鬼斧神工造就了盘山的奇峰险壑，尤以 “五峰”“八石”“三盘之胜”奇特称绝。主峰名挂月峰，前有紫盖峰，后依自来峰，东连九华峰，西傍舞剑峰，五峰攒簇，天然形成了上盘松树奇，中盘岩石怪，下盘响流泉，十里闻澎湃的美妙画卷。
+      <%= image_tag '5.jpg' %>
+      盘山现已开放了五大景区，三百余处景点，建设开通了入胜、云松、挂月三条客运索道和景区环保观光车。106平方公里的盘山风景名胜区，正以它那秀丽清幽的景色，古老迷人的传说，热情文明的服务，欢迎四海宾朋光临！
+    </p>
+  </div>
+  <div class="top_right"></div>
+  <div class="top_left"></div>
+  <div class="bottom_left"></div>
+  <div class="bottom_right"></div>
+</div>
+<ul class="picNav">
+  <li><a class="on" href="/ggms/index">缘起</a></li>
+  <li><a href="/wzsj/index">胜境</a></li>
+  <li><a href="/wtxj/index">问途</a></li>
+  <li><a href="/wydy/index">登游</a></li>
+</ul>
+<script type="text/javascript">
+  function findDimensions() {
+    var tabcont=document.getElementById("contain");
+    var tabcont1=document.getElementById("contain1");
+    cheight=document.documentElement.clientHeight;
+
+    tabcont1.style.height=cheight-140 + 'px';
+    tabcont1.style.minHeight=cheight-140 + 'px';
+
+  }
+  window.onload= function(){findDimensions();}
+  window.onresize= function(){findDimensions();}
+  function  turnHome(){
+    window.location.href="/"
+  }
+</script>
