@@ -1,0 +1,63 @@
+<header>
+  <h4 class="title"><span class="back" onClick="history.back();">上一页</span>我欲登游<span class="home"  onclick="turnHome()">首页</span></h4>
+</header>
+<div class="container" id="contain">
+  <div class="art" id="contain1">
+    <ul class="ul_goods">
+      <li>
+        <div class="kfsj">
+          <h3>开放时间</h3>
+          <p>早8点后即可进入景区，天黑前离开景区。</p>
+        </div>
+        <div class="jqpj">
+          <h3>景区票价</h3>
+          <p>景区联票成人门票 130元/张</p>
+          <p>学生门票(本科含本科以下) 65元/张</p>
+          <p>景区联票包含盘山景区、盘山书院。</p>
+          <p>周日至周四</p>
+        </div>
+      </li>
+      <li>
+        <div class="jqpj">
+          <p>型山水实景演出</p>
+        </div>
+      </li>
+      <li>
+        <div class="jqpj">
+          <p>周五、周六及法定节假日需加收费用</p>
+        </div>
+        <div style="clear:both"></div>
+        <div class="lxdh">
+          <h3>联系电话</h3>
+          <p>景区咨询电话：022-29821824</p>
+          <p>景区投诉电话：022-29821719</p>
+          <p>景区救援电话：022-29821814</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<ul class="picNav">
+  <li><a href="/ggms/index">缘起</a></li>
+  <li><a href="/wzsj/index">胜境</a></li>
+  <li><a href="/wtxj/index">问途</a></li>
+  <li><a class="on" href="/wydy/index">登游</a></li>
+</ul>
+<script language=javascript>
+  function findDimensions() {
+
+    var tabcont=document.getElementById("contain");
+    var tabcont1=document.getElementById("contain1");
+    cheight=document.documentElement.clientHeight;
+
+    tabcont1.style.height=cheight-140 + 'px';
+    tabcont1.style.minHeight=cheight-140 + 'px';
+
+
+  }
+  window.onload= function(){findDimensions();}
+  window.onresize= function(){findDimensions();}
+  function  turnHome(){
+    window.location.href="/"
+  } 
+</script>
