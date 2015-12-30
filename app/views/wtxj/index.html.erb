@@ -3,16 +3,11 @@
 </header>
 <div class="container5"  id="contain">
 
-  <div class="bj"><a href="6-1.html">北京方面游客</a></div>
-  <div class="tj"><a href="6-3.html">天津方面游客</a></div>
-  <div class="db"><a href="6-2.html">东北方面游客</a></div>
+  <div class="bj"><a href="/wtxj/beijing">北京方面游客</a></div>
+  <div class="tj"><a href="/wtxj/tianjin">天津方面游客</a></div>
+  <div class="db"><a href="/wtxj/dongbei">东北方面游客</a></div>
 </div>
-<ul class="picNav">
-  <li><a href="/ggms/index">缘起</a></li>
-  <li><a href="/wzsj/index">胜境</a></li>
-  <li><a class="on" href="/wtxj/index">问途</a></li>
-  <li><a href="/wydy/index">登游</a></li>
-</ul>
+<%= render 'pic_nav_wtxj' %>
 <script language=javascript>
   function findDimensions() {
     var tabcont=document.getElementById("contain");

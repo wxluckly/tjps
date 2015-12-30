@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,height=device-height,user-scalable=no"/>
+<title>天津盘山风景名胜区</title>
+<%= stylesheet_link_tag 'css38', media: 'all' %>
+</head>
+<body>
+  <%= yield %>
+  <%= render 'pic_nav_wzsj' %>
+  <script type="text/javascript">
+    function findDimensions() {
+
+      var tabcont=document.getElementById("contain");
+      var tabcont1=document.getElementById("contain1");
+      var tabcont2=document.getElementById("contain2");
+      var picNav=document.getElementById("picNav");
+      cheight=(document.documentElement.clientHeight-0);
+      wheight=window.innerHeight;
+      sheightava=screen.availHeight;
+      subtrac = sheightava - cheight;
+
+      if(sheightava > 640){
+        if(sheightava>800&&subtrac>60){
+          tabcont2.style.height=cheight-tabcont1.clientWidth+100 + 'px';
+          tabcont2.style.minHeight=cheight-tabcont1.clientWidth+100 + 'px';
+        }else if(sheightava>800 && subtrac < 61 ){
+          tabcont2.style.height=cheight-tabcont1.clientWidth+60 + 'px';
+          tabcont2.style.minHeight=cheight-tabcont1.clientWidth+60 + 'px';
+        }else if(sheightava < 801 && subtrac > 61 ){
+          tabcont2.style.height=cheight-tabcont1.clientWidth+60 + 'px';
+          tabcont2.style.minHeight=cheight-tabcont1.clientWidth+60 + 'px';
+        }else{
+          tabcont2.style.height=cheight-tabcont1.clientWidth+40 + 'px';
+          tabcont2.style.minHeight=cheight-tabcont1.clientWidth+40 + 'px';
+        }
+      }else{
+        tabcont2.style.height=cheight-tabcont1.clientWidth-80 + 'px';
+        tabcont2.style.minHeight=cheight-tabcont1.clientWidth-80 + 'px';  
+      }
+    }
+
+    window.onload= function(){findDimensions();}
+    window.onresize= function(){findDimensions();}
+    function  turnHome(){
+      window.location.href="/"
+    } 
+  </script>
+</body>
+</html>
