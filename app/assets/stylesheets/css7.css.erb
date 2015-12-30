@@ -3,12 +3,12 @@ li{list-style: none;}
 html{height: 100%;}
 
 @font-face {
-	font-family:"STLITI";
-	src: url("STLITI.eot");
-	src: local("STLITI Regular"), local("STLITI"), url("STLITI.ttf") format("truetype"), url("STLITI.svg#STLITI") format("svg");
+  font-family:"STLITI";
+  src: url("STLITI.eot");
+  src: local("STLITI Regular"), local("STLITI"), url("STLITI.ttf") format("truetype"), url("STLITI.svg#STLITI") format("svg");
 }
 
-body{background:url(bg7.jpg) no-repeat center bottom;background-size:cover;width: 100%;background-attachment: fixed;
+body{background:url(<%= image_url 'bg7.jpg' %>) no-repeat center bottom;background-size:cover;width: 100%;background-attachment: fixed;
 
 filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');
 -moz-background-size:100% 100%;
@@ -24,12 +24,12 @@ header .home{position:absolute;right: 20px;}
 .picNav{width: 100%; margin:0px auto;position: fixed; bottom:0px;}
 .picNav li{}
 .picNav li.on{}
-.picNav li a{ font-family: STLITI;text-decoration:none;width:23%;  margin-left:2%; line-height: 60px;  text-align: center; float: left;background-size:auto 100%; background:url(one_btn2.png) no-repeat center; background-size: contain; color: #fff; font-weight: bolder;}
-.picNav li a.on{background: url(one_btn1.png) no-repeat center; background-size: contain;}
+.picNav li a{ font-family: STLITI;text-decoration:none;width:23%;  margin-left:2%; line-height: 60px;  text-align: center; float: left;background-size:auto 100%; background:url(<%= image_url 'one_btn2.png' %>) no-repeat center; background-size: contain; color: #fff; font-weight: bolder;}
+.picNav li a.on{background: url(<%= image_url 'one_btn1.png' %>) no-repeat center; background-size: contain;}
 
 
 .container5{width: 90%; margin:160px auto; position:relative;}
-.bj,.db,.tj{ width:100px; text-align:center; height:auto; line-height:34px; padding:10px auto; margin:10px auto; background: url(pic1.jpg) no-repeat center bottom;}
+.bj,.db,.tj{ width:100px; text-align:center; height:auto; line-height:34px; padding:10px auto; margin:10px auto; background: url(<%= image_url 'pic1.jpg' %>) no-repeat center bottom;}
 .bj a,.db a,.tj a{ color:#F00; font-family:"微软雅黑";text-decoration:none;}
 
 .container {margin:55px auto 50px auto;}
@@ -48,9 +48,9 @@ header .home{position:absolute;right: 20px;}
 .ul_goods li p{ color:#fff; margin:0; text-align:left; padding:0;line-height:18px;}
 
 .top_right,.top_left,.bottom_left,.bottom_right{position: absolute;width: 42px;height: 42px;}
-.top_right{background: url(2.png) no-repeat center; top: 0; right: 0}
-.top_left{background: url(1.png) no-repeat center; top: 0; left: 0}
-.bottom_right{background: url(4.png) no-repeat center; bottom: 0; right: 0}
-.bottom_left{background: url(3.png) no-repeat center; bottom: 0; left: 0}
+.top_right{background: url(<%= image_url '2.png' %>) no-repeat center; top: 0; right: 0}
+.top_left{background: url(<%= image_url '1.png' %>) no-repeat center; top: 0; left: 0}
+.bottom_right{background: url(<%= image_url '4.png' %>) no-repeat center; bottom: 0; right: 0}
+.bottom_left{background: url(<%= image_url '3.png' %>) no-repeat center; bottom: 0; left: 0}
 .container p{width: 100%;color:#ab8821;line-height: 26px;font-family: 1.5em;}
 .container p img{width:80%;margin: 5px auto;display: block;}
