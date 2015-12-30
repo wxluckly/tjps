@@ -23,7 +23,7 @@ gem 'sprockets-rails', '2.1.3'
 # 辅助工具
 gem 'quiet_assets'  # 禁用assets log
 gem 'will_paginate'
-gem 'simple_form'
+# gem 'simple_form'
 gem 'ancestry'
 gem 'rucaptcha'
 gem "config"
