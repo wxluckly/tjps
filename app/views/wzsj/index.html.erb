@@ -1,36 +1,36 @@
-&nbsp;
-<header>
-  <h4 class="title">
-    <span class="back" onClick="history.back();">上一页</span>
-    无终胜境
-    <span class="home"  onclick="turnHome()">首页</span>
-  </h4>
-</header>
-<div class="container6" id="contain">
-  <div class="bj"><a href="/wzsj/s1">牌&nbsp楼</a></div>
-  <div class="bj"><a href="/wzsj/s2">新&nbsp山&nbsp门</a></div>
-  <div class="bj"><a href="/wzsj/s3">三&nbsp盘&nbsp暮&nbsp雨</a></div>
-  <div class="bj"><a href="/wzsj/s4">入&nbsp胜</a></div>
-  <div class="bj"><a href="/wzsj/s5">漱&nbsp峡</a></div>
-  <div class="bj"><a href="/wzsj/s6">飞&nbsp帛&nbsp涧</a></div>
-  <div class="bj"><a href="/wzsj/s7">云&nbsp楼&nbsp梨&nbsp影</a></div>
-  <div class="bj"><a href="/wzsj/s8">挂&nbsp月&nbsp峰</a></div>
-</div>
-<%= render 'pic_nav_wzsj' %>
-<script >
-  function findDimensions() {
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,height=device-height,user-scalable=no"/>
+  <meta charset="utf-8">
+  <title>天津盘山风景名胜区</title>
+  <%= stylesheet_link_tag 'css5', media: 'all' %>
+</head>
 
-    var tabcont=document.getElementById("contain");
+<body>
+  <header>
+    <h4 class="title">
+      <span class="back" onClick="history.back();">上一页</span>
+      无终胜境
+      <span class="home"  onclick="turnHome()">首页</span>
+    </h4>
+  </header>
+  <div class="wuzhongshengjing">
+    <a class="loupai" href="3_1.html"><img src="<%= image_url 'weizhi.png' %>" alt="牌楼">牌楼</a>
+    <a class="xinshanmen" href="3_2.html"><img src="<%= image_url 'weizhi.png' %>" alt="新山门">新山门</a>
+    <a class="sanpanmuyu" href="3_3.html"><img src="<%= image_url 'weizhi.png' %>" alt="三盘暮雨"></a>
+    <a class="rusheng" href="3_4.html"><img src="<%= image_url 'weizhi.png' %>" alt="入胜"></a>
+    <a class="shuxia" href="3_5.html"><img src="<%= image_url 'weizhi.png' %>" alt="漱峡"></a>
+    <a class="feijinjian" href="3_6.html"><img src="<%= image_url 'weizhi.png' %>" alt="飞帛涧"></a>
+    <a class="yunlouliying" href="3_7.html"><img src="<%= image_url 'weizhi.png' %>" alt="云楼梨影"></a>
+    <a class="guayuefeng" href="3_8.html"><img src="<%= image_url 'weizhi.png' %>" alt="挂月峰"></a>
+  </div>
 
-    cheight=document.documentElement.clientHeight;
-
-    tabcont.style.height=cheight-160 + 'px';
-    tabcont.style.minHeight=cheight-160 + 'px';
-
-  }
-  window.onload= function(){findDimensions();}
-  window.onresize= function(){findDimensions();}
-  function  turnHome(){
-    window.location.href="/"
-  }
-</script>
+  <%= render 'pic_nav_wzsj' %>
+  <script >
+    function  turnHome(){
+      window.location.href="/"
+    }
+  </script>
+</body>
+</html>

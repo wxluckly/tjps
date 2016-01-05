@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     get :index
   end
   namespace :wzsj do
-    get :index, :s1, :s2, :s3, :s4, :s5, :s6, :s7, :s8
+    get :index, :s1, :s2, :s3, :s4, :s5, :s6, :s7, :s8, :index2
   end
   namespace :wtxj do
     get :index, :beijing, :tianjin, :dongbei

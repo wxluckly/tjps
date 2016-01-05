@@ -3,6 +3,10 @@ class WzsjController < ApplicationController
   def index
   end
 
+  def index2
+    render layout: false
+  end
+
   def s1
   end
 
