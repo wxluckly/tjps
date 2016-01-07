@@ -33,28 +33,7 @@
       window.location.href="/"
     }
     
-    var appVersion = window.navigator.appVersion;   //客户端信息  
-var isSystem=appVersion.indexOf("Android")>-1 || appVersion.indexOf("android")>-1?"android":false;  
-if(isSystem!="android"){  
-    isSystem=appVersion.indexOf("iPhone")>-1 || appVersion.indexOf("iPod")>-1?"iphone":false;
-}
-
-switch (isSystem){  
-    case "android":
-        var windowWidth=window.screen.width;    //屏幕分辨率
-        var devicePixelRatio = window.devicePixelRatio; //屏幕分辨率与像素比
-        var targetDensitydpi = 640 / windowWidth * devicePixelRatio * 160;
-        document.writeln('<meta name="viewport" content="width=device-width,target-densitydpi='+targetDensitydpi+',user-scalable=no">');
-        break;
-    case "iphone":
-        var windowWidth=window.screen.width;    //屏幕分辨率
-        var targetDensitydpi=windowWidth/640;
-        document.writeln('<meta name="viewport" content="width=device-width,initial-scale='+targetDensitydpi+',minimum-scale='+targetDensitydpi+', maximum-scale='+targetDensitydpi+',user-scalable=no" />');
-        document.writeln('<meta name="format-detection" content="telephone=no">');
-        document.writeln('<meta name="apple-mobile-web-app-capable" content="no" />');
-        document.writeln('<meta name="apple-mobile-web-app-status-bar-style" content="blank" />');
-        break;
-}
+   
   </script>
 </body>
 </html>
